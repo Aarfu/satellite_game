@@ -33,6 +33,7 @@ num_of_enemies=6
 for i in range (num_of_enemies):
 
     enemyimg.append(pygame.image.load('enemy.png'))
+    
     enemyx.append(random.randint(0,756 ))
     enemyy.append(random.randint(50,150))
     enemyx_change.append(0.3)
@@ -156,3 +157,4 @@ while running:
     player(playerx,playery)
     show_score(textx,texty)
     pygame.display.update()
+    #game complete
